@@ -1,0 +1,15 @@
+package Exercise4point4;
+
+public class Fruit {
+protected String name;
+	
+	public Fruit() {//constructor with no argument
+		this.name = " ";
+	}
+	
+	public Fruit(String n) {//constructor with 1 argument
+		this.name = n;
+		System.out.println("Fruit constructor is invoked");
+	}
+
+}
