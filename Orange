@@ -1,0 +1,39 @@
+package Exercise4point4;
+
+public class Orange {
+	double v1, v2;
+    int quantity;
+	private char size;
+	
+	public Orange(double v, int q, char s) {//constructor for sub class with 3 arguments
+		this.v1 = v;
+		this.quantity = q;
+		this.size= s;
+		
+		switch(this.size) {
+		case 'S': totalVitamin();
+		          System.out.println("Quantity\t\t: " + this.quantity);
+		          System.out.printf("%s%.2f\n\n","Total vitamin\t\t: ",totalVitamin());
+		          break;
+		case 'M': v2 = 225;
+		          totalVitamin(v2);
+		          System.out.println("Quantity\t\t: " + this.quantity);
+		          System.out.printf("%s%.2f\n\n","Total vitamin\t\t: ",totalVitamin(v2));
+		          break;
+		case 'L': v2 = 255;
+                  totalVitamin(v2);
+                  System.out.println("Quantity\t\t: " + this.quantity);
+                  System.out.printf("%s%.2f\n\n","Total vitamin\t\t: ",totalVitamin(v2));
+                  break;
+		}
+	}
+	
+	public double totalVitamin() {
+		return this.v1 * this.quantity;
+	}
+	
+	public double totalVitamin(double v2) {
+		return this.v2 * this.quantity;
+	}
+
+}
