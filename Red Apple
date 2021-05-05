@@ -1,0 +1,9 @@
+package Exercise4point4;
+
+public class RedApple extends Apple{
+	
+	public RedApple(int q, double p) {
+		super(q,p);
+	}
+
+}
